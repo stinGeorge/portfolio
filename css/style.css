@@ -1,0 +1,237 @@
+@import url('http://fonts.googleapis.com/css?family=Open+Sans:400,700');
+@font-face {
+   font-family: 'portfolio';
+   src:url('../fonts/portfolio.eot?6u03z');
+   src:url('../fonts/portfolio.eot?#iefix6u03z') format('embedded-opentype'),
+      url('../fonts/portfolio.woff?6u03z') format('woff'),
+      url('../fonts/portfolio.ttf?6u03z') format('truetype'),
+      url('../fonts/portfolio.svg?6u03z#portfolio') format('svg');
+   font-weight: normal;
+   font-style: normal;
+}
+[class^="icon-"], [class*=" icon-"] {
+   font-family: 'portfolio';
+   speak: none;
+   font-style: normal;
+   font-weight: normal;
+   font-variant: normal;
+   text-transform: none;
+   line-height: 1;
+   font-size: 1.5em;
+   vertical-align: middle;
+   margin: 0 .3em 0 0;
+
+   /* Better Font Rendering =========== */
+   -webkit-font-smoothing: antialiased;
+   -moz-osx-font-smoothing: grayscale;
+}
+.icon-vela:before {
+   content: "\e601";
+}
+.icon-dni:before {
+   content: "\e603";
+}
+.icon-telf:before {
+   content: "\e604";
+}
+.icon-cel:before {
+   content: "\e605";
+}
+.icon-mail:before {
+   content: "\e606";
+}
+.icon-location:before {
+   content: "\e607";
+}
+.icon-flag:before {
+   content: "\e608";
+}
+.icon-embed:before {
+   content: "\e60b";
+}
+.icon-code:before {
+   content: "\e60c";
+   margin: 0 0 0 .3em;
+}
+/*.icon-pastel:before {
+   content: "\e602";
+}
+.icon-arroba:before {
+   content: "\e609";
+}.icon-job:before {
+   content: "\e60a";
+}
+.icon-group:before {
+   content: "\e60d";
+}*/
+
+*{
+   margin: 0;
+   padding: 0;
+}
+body{
+   /* background: #2C2B23; */
+   background: #f0f0f0;
+   font-family: 'Open Sans', 'arial';
+   font-size: 16px;
+}
+canvas{
+   transform:scale(1);
+}
+/* h1{
+   animation: titulo 5s infinite ease-in-out;
+   transform: rotate(-5deg);
+} */
+h1, h2, h3, p{
+   padding: .3em 1em .6em;
+}
+header{
+   background: #f0f0f0;
+}
+header > div{
+   color: #2f2f2f;
+   box-sizing: border-box;
+   overflow: hidden;
+   position: relative;
+   text-align: center;
+   z-index: 1;
+}
+header h1{
+   color: white;
+}
+header > div div{
+   background: url('../fotos/Captura1.png');
+   background-size: cover;
+   margin: 0;
+   padding: 8em .5em;
+}
+nav{
+   position: fixed;
+   width: 100%;
+   z-index: 10;
+}
+nav{
+   background: #2f2f2f;
+   overflow: hidden;
+}
+nav a{
+   color: white;
+   display: block;
+   padding: 1.5em .8em;
+   text-decoration: none;
+}
+nav a:hover{
+   background: #666;
+}
+nav li{
+   display: inline-block;
+   list-style: none;
+}
+section{
+   background: #f0f0f0;
+   margin: 0 auto;
+   padding: 3em 0 0 0;
+}
+#arrow{
+   margin: .5em auto 0;
+   width: 0;
+   height: 0;
+   border-left: 30px solid transparent;
+   border-right: 30px solid transparent;
+   border-bottom: 60px solid #6f6f6f;
+}
+#avatar{
+   /* animation: avatar 5s infinite ease-in-out .5s; */
+   background: #f0f0f0 url('../img/min-avatar.jpg');
+   background-size: cover;
+   border: 8px solid #f0f0f0;
+   border-radius: 80px;
+   box-shadow:  0 0 10px #2f2f2f inset;
+   height: 150px;
+   margin: -80px auto 1em;
+   overflow: hidden;
+   width: 150px;
+}
+#dat-gen{
+   color: #2f2f2f;
+   box-sizing: border-box;
+   overflow: hidden;
+   position: relative;
+   text-align: center;
+   z-index: 1;
+}
+#dat-gen > ul{
+   list-style: none;
+   margin: 1em auto;
+   width: 90%;
+}
+#dat-gen > ul > li:nth-child(even){
+   font-size: 1.2em;
+   margin-bottom: 1em;
+   text-align: right;
+}
+#dat-gen > ul > li:nth-child(odd){
+   border-bottom: 1px solid #2C2B23;
+   font-weight: bold;
+   text-align: left;
+}
+#dat-gen > ul > li:nth-child(odd):hover{
+   background: gray;
+}
+#dat-gen > ul > li:hover + li:nth-child(even){
+   background: gray;
+}
+#envoltura{
+   overflow: hidden;
+   min-width: 320px;
+}
+#skills div{
+   text-align: center;
+}
+#sobre-mi{
+   background: #6f6f6f;
+   color: white;
+   padding: 1em;
+   margin: 0 1em 1em ;
+   border-radius: 10px;
+}
+@keyframes avatar{
+   0%{
+      border-radius: 80px;
+   }
+   50%{
+      border-radius: 0;
+   }
+   100%{
+      border-radius: 80px;
+   }
+}
+@keyframes titulo{
+   0%{
+      text-shadow: -6px 6px 5px black;
+      transform: rotate(-5deg);
+   }
+   50%{
+      text-shadow: 6px 6px 5px black;
+      transform: rotate(5deg);
+   }
+   100%{
+      text-shadow: -6px 6px 5px black;
+      transform: rotate(-5deg);
+   }
+}
+/* @media screen and (min-width: 800px){
+   body, html, #dat-gen{
+      height: 100%;
+   }
+   header{
+      z-index: 10;
+   }
+   #dat-gen{
+      max-width: 800px;
+      min-width: 400px;
+      position: fixed;
+      width: 20%;
+      z-index: 1;
+   }
+} */
